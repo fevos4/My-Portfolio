@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Bolder';
+    src: url('../public/Fonts/Belanosima-Bold.ttf');
+}
+
+
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../public/Fonts/Belanosima-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SemiBold';
+    src: url('../public/Fonts/Belanosima-SemiBold.ttf');
+}
