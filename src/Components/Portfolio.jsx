@@ -41,7 +41,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="md:min-h-screen bg-[#090C11] text-white p-10 md:p-24" id="portfolio">
+    <div className=" bg-[#090C11] text-white p-10 md:p-24" id="portfolio">
       <div className="mb-10">
         <h2 className="text-sm font-bolder text-yellow-500">My</h2>
         <h1 className="text-lg md:text-3xl text-white font-bolder mt-2 mb-4">Portfolio</h1>
@@ -83,7 +83,7 @@ const Portfolio = () => {
       <div className="flex justify-center mt-4">
         <button
           onClick={() => setShowMore(!showMore)}
-          className="bg-yellow-500 text-black py-2 px-4 rounded-lg font-bolder"
+          className="bg-yellow-500 text-black py-2 px-4 rounded-lg font-bolder hidden md:block"
         >
           {showMore ? 'Show Less' : 'Show More'}
         </button>
