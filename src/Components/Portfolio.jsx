@@ -20,7 +20,6 @@ const Portfolio = () => {
     { image: "/assets/coffeed.png", category: "designs", link: "https://www.figma.com/proto/bpSKQ0AwWl49G7xm4BEWJj/Untitled?page-id=0%3A1&node-id=1-3&node-type=frame&viewport=645%2C379%2C0.19&t=BCCavcSmosQNkclk-1&scaling=scale-down&content-scaling=fixed" },
     { image: "/assets/defi.jpeg", category: "websites", link: "https://de-fi-project.vercel.app/" },
     { image: "/assets/winey.png", category: "designs", link: "/projects/project4" },
-    
     { image: "/assets/wineyb.png", category: "designs", link: "/projects/project6" },
   ];
 
@@ -41,7 +40,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className=" bg-[#090C11] text-white p-10 md:p-24" id="portfolio">
+    <div className="bg-[#090C11] text-white p-10 md:p-24" id="portfolio">
       <div className="mb-10">
         <h2 className="text-sm font-bolder text-yellow-500">My</h2>
         <h1 className="text-lg md:text-3xl text-white font-bolder mt-2 mb-4">Portfolio</h1>
@@ -59,6 +58,8 @@ const Portfolio = () => {
           </button>
         ))}
       </div>
+
+      {/* Desktop Grid */}
       <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
         <AnimatePresence>
           {(showMore ? filteredProjects : initialProjects).map((project, index) => (
@@ -69,7 +70,7 @@ const Portfolio = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 30 }} // Smooth exit animation
               transition={{ duration: 0.4, ease: "easeInOut" }} // Duration for smooth transitions
-              onClick={() => window.open(project.link, '_blank')}
+              onClick={() => window.open(project.link, "_blank")}
             >
               <img
                 src={project.image}
@@ -80,14 +81,20 @@ const Portfolio = () => {
           ))}
         </AnimatePresence>
       </div>
+
+      {/* Show More Button */}
       <div className="flex justify-center mt-4">
-        <button
-          onClick={() => setShowMore(!showMore)}
-          className="bg-yellow-500 text-black py-2 px-4 rounded-lg font-bolder hidden md:block"
-        >
-          {showMore ? 'Show Less' : 'Show More'}
-        </button>
+        {filteredProjects.length > 6 && (
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="bg-yellow-500 text-black py-2 px-4 rounded-lg font-bolder"
+          >
+            {showMore ? "Show Less" : "Show More"}
+          </button>
+        )}
       </div>
+
+      {/* Mobile Carousel */}
       <div className="md:hidden">
         <Slider {...settings}>
           {filteredProjects.map((project, index) => (
@@ -98,7 +105,7 @@ const Portfolio = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 30 }} // Smooth exit animation
               transition={{ duration: 0.4, ease: "easeInOut" }} // Duration for smooth transitions
-              onClick={() => window.open(project.link, '_blank')}
+              onClick={() => window.open(project.link, "_blank")}
             >
               <img
                 src={project.image}
