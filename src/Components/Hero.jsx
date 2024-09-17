@@ -29,7 +29,7 @@ const Hero = () => {
 
   return (
     <div 
-      className="w-full h-screen flex flex-col justify-between pt-28 px-4 md:px-24 bg-[#090C11] relative"
+      className="w-full flex flex-col justify-between pt-28 px-4 md:px-24 bg-[#090C11] relative"
       id="home"
     >
       {/* Blob SVG Background - Top Blob */}
