@@ -87,7 +87,7 @@ const Portfolio = () => {
         {filteredProjects.length > 6 && (
           <button
             onClick={() => setShowMore(!showMore)}
-            className="bg-yellow-500 text-black py-2 px-4 rounded-lg font-bolder"
+            className="bg-yellow-500 text-black py-2 px-4 rounded-lg font-bolder md:block hidden"
           >
             {showMore ? "Show Less" : "Show More"}
           </button>
