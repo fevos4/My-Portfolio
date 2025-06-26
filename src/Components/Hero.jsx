@@ -121,7 +121,7 @@ const Hero = () => {
             I am <span className="text-[#FFD600]">Feven Tesfaye</span>
           </p>
           <p className="text-3xl md:text-5xl font-bolder text-white">
-            Front-end Developer <br /> & <br /> Web-designer
+            Developer <br /> & <br /> Web-designer
           </p>
           <p className="py-3 md:mb-5 text-sm md:text-base font-regu text-gray-300 text-center">
             Welcome to my portfolio, where I showcase my journey of constant growth in coding and software development,
