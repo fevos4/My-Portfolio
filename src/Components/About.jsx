@@ -19,9 +19,7 @@ const AboutMe = () => {
         <h2 className="text-sm font-bolder text-yellow-500">Know</h2>
         <h1 className="text-lg md:text-3xl font-bolder mt-2">About me</h1>
         <p className="mt-4 text-sm md:text-base font-regu">
-          I am a passionate Computer Science student with hands-on experience in front-end development and web design.
-          With a solid foundation in HTML, CSS, JavaScript, Tailwind CSS, and ReactJS, I bring creativity and technical expertise to every project. 
-          I have a keen eye for detail and thrive in crafting visually appealing, responsive, and user-friendly websites.
+          I am a passionate Computer Science and Engineering graduate with hands-on experience in web design and development. With a solid foundation in HTML, CSS, JavaScript, Tailwind CSS, and ReactJS, I bring both creativity and technical expertise to every project. I have a keen eye for detail and thrive in crafting visually appealing, responsive, and user-friendly websites. I'm a fast learner who is always exploring new technologies and expanding my knowledge to stay current and grow as a developer.
         </p>
         <p className="mt-4 text-sm md:text-base font-regu">
           Let’s build something great together!
@@ -34,7 +32,7 @@ const AboutMe = () => {
   className="hover:bg-[#ae9410] rounded-md bg-[#FFD600] px-6 py-2 text-black font-bolder text-sm md:text-lg"
 >
   <a 
-    href="/assets/cv.pdf" 
+    href="/assets/NCV.pdf" 
     target="_blank" 
     rel="noopener noreferrer" 
     download
